@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="~/css/styles.css">
+    <title>Order</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Order Details:</h2>
+      <h3>Vendor: @Model["vendor"].Name</h3>
+      <h3>@Model["order"].Title</h3>
+      <h3>@Model["order"].Description</h3>
+      <h3>@Model["order"].Price</h3>
+      <h3>@Model["order"].Date</h3>
+
+      <h3><a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order</a></h3>
+      <h3><a href='/vendors'>View all vendors</a></h3>
+    </div>
+  </body>
+</html>
