@@ -9,12 +9,13 @@
   <body>
     <div class="container">
       <h2>Order Details:</h2>
-      <h3>Vendor:@Model["vendor"].Name</h3>
       <h3>@Model["order"].Title</h3>
-      <h3>@Model["order"].Description</h3>
-      <h3>@Model["order"].Price</h3>
-      <h3>@Model["order"].Date</h3>
-
+      <h3>Vendor: @Model["vendor"].Name</h3>
+      <ul>
+        <li>Description: @Model["order"].Description</li>
+        <li>Price: @Model["order"].Price</li>
+        <li>Date: @Model["order"].Date</li>
+      </ul>
       <h3><a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order</a></h3>
       <h3><a href='/vendors'>View all vendors</a></h3>
     </div>
