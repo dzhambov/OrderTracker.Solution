@@ -1,17 +1,27 @@
-@{
-  Layout = "_Layout";
-}
-
-<h2>Add new order to @Model.Nmae</h2>
-<form action="/vendors/@Model.Id/orders" method="post">
-<input type="hidden" id="vendorId" name="vendorId" value="@Model.Id">
-<label for="orderTitle">Order Title</label>
-<input type="text" id="orderTitle" name="orderTitle">
-<label for="orderDescription">Order Description</label>
-<input type="text" id="orderDescription" name="orderDescription">
-<label for="orderPrice">Order Price</label>
-<input type="text" id="orderPrice" name="orderPrice">
-<label for="orderDate">Order Date</label>
-<input type="text" id="orderDate" name="orderDate">
-<button type="submit">Add order</button>
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="~/css/styles.css">
+    <title>New Order</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Add new order to @Model.Name</h2>
+      <div>
+        <form action="/vendors/@Model.Id/orders" method="post">
+          <input type="hidden" id="vendorId" name="vendorId" value="@Model.Id">
+          <label for="orderTitle">Order Title</label>
+          <input type="text" id="orderTitle" name="orderTitle">
+          <label for="orderDescription">Order Description</label>
+          <input type="text" id="orderDescription" name="orderDescription">
+          <label for="orderPrice">Order Price</label>
+          <input type="text" id="orderPrice" name="orderPrice">
+          <label for="orderDate">Order Date</label>
+          <input type="text" id="orderDate" name="orderDate">
+          <button type="submit">Add order</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
