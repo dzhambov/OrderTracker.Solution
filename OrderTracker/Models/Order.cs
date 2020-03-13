@@ -7,12 +7,12 @@ namespace OrderTracker.Models
     public string Title { get; set; }
     public string Description { get; set; }
     public double Price { get; set; }
-    public int Date { get; set; }
+    public string Date { get; set; }
     public int Id {get; set; }
 
     private static List<Order> _instances = new List<Order> {};
 
-    public Order(string title, string description, double price, int date)
+    public Order(string title, string description, double price, string date)
     {
       Title = title;
       Description = description;
