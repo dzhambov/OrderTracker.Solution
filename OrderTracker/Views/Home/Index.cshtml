@@ -1,0 +1,11 @@
+@using OrderTracker.Models;
+
+<h1>Orders List</h1>
+<ul>
+  @foreach(Order order in Model)
+  {
+    <li>@order.Title</li>
+    <li>@order.Description</li>
+  }
+</ul>
+<a href="/orders/new">Add a new order.</a>
