@@ -21,7 +21,7 @@ namespace OrderTracker.Models
 
     public static void ClearAll()
     {
-      _instances.ClearAll();
+      _instances.Clear();
     }
 
     public static List<Vendor> GetAll()
@@ -35,7 +35,7 @@ namespace OrderTracker.Models
     }
     public void AddOrder( Order order)
     {
-      Order.Add(order);
+      Orders.Add(order);
     }
   }
 }
