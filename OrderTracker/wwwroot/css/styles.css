@@ -1,9 +1,13 @@
-div#footer {
-  position:fixed;
-  bottom:0px;
-  left:0px;
-  width:100%;
-  color:#CCC;
-  background:#333;
-  padding:8px;
+.welcome {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.btn {
+  margin-left: 100px;
+}
+
+body {
+  background-image: url("https://images2.minutemediacdn.com/image/upload/c_crop,h_1414,w_2101,x_9,y_0/v1554733180/shape/mentalfloss/569606.scorpp.istock-604025210.jpg?itok=RmT_QDyX");
 }
