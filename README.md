@@ -12,11 +12,11 @@
 
 | Behavior | Input | Output |
 |---|:---:|:---:|
-|The user is greetd at the beginnig|User name - "John"|"Hello John"|
-|The user is presented with a menu options|N/A|Menu: Bread or Pastry|
-|The user enters what he would like to order|Bread or Pastry|User's choice|
-|The user is asked about the quntity of his order| 3 | 3 | 
-|The program displays back to the user the quantity, the price and if there is any discount for the order| Bread: 2| Price  $10|
+||||
+||||
+||||
+|| | | 
+||||
 
 ## Setup/Installation Requirements
 
